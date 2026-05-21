@@ -489,6 +489,25 @@
 
   </section>
 
+  <!-- الصوت -->
+
+<audio id="bgMusic" loop>
+  <source src="./audio/eid.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+const music = document.getElementById("bgMusic");
+
+/* تشغيل الصوت أول ما يلمس المستخدم الصفحة */
+
+document.addEventListener("click", () => {
+
+  music.play();
+
+}, { once:true });
+
+</script>
   <script>
 
     function showMessage(){
